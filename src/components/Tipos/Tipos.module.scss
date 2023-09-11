@@ -1,0 +1,78 @@
+@import "../../assets/sass/abstracts/utilities";
+
+.tipos {
+  background-image: url("../../assets/img/figura3.jpg");
+  background-size: cover;
+  color: #0e0e0e;
+  box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.3);
+  position: sticky;
+  z-index: 120;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  height: 60rem;
+
+  @include max(1000) {
+    height: fit-content;
+    padding-bottom: 2rem;
+  }
+
+  & h2 {
+    border-radius: 2rem;
+    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.3);
+    background-color: #fefefe;
+    font-size: 4rem;
+    padding: 2rem;
+    text-align: center;
+    margin: 3rem;
+  }
+
+  & p {
+    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.3);
+    border-radius: 5rem;
+    background-color: #fefefe;
+    padding: 5rem;
+    text-align: center;
+    font-size: 2rem;
+    width: 75%;
+  }
+
+  & div {
+    display: flex;
+    margin-top: 3rem;
+    gap: 2rem;
+
+    & article {
+      padding: 3rem;
+      background-color: #ff5f5f;
+      font-size: 4rem;
+      text-align: center;
+      border-radius: 7rem;
+      border: #ff4040 solid 0.5rem;
+      box-shadow: inset 0px 0px 10px 2px rgba(255, 64, 64, 1);
+      width: 12rem;
+      color: #fefefe;
+      font-weight: 700;
+
+      &:hover {
+        animation: boop forwards 0.2s;
+      }
+    }
+
+    @include max(1000) {
+      display: none;
+    }
+  }
+}
+
+@keyframes boop {
+  from {
+    transform: scale(0.95);
+  }
+  80% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

@@ -1,0 +1,21 @@
+.footer {
+  background-image: url("../../assets/img/figura3.jpg");
+  background-size: cover;
+  color: #0e0e0e;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  padding: 2rem;
+  background-position: bottom;
+
+  & h2 {
+    font-size: 4rem;
+    text-align: center;
+  }
+
+  & p {
+    text-align: center;
+    margin: 1rem;
+    font-size: 2rem;
+  }
+}

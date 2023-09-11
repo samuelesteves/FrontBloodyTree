@@ -1,0 +1,36 @@
+@import "../../assets/sass/abstracts/utilities";
+
+.header {
+  display: flex;
+  width: 100%;
+  padding: 1rem;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.3);
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  max-height: 12rem;
+  background-color: #fefefe;
+
+  @include max(1000) {
+    justify-content: center;
+  }
+
+  & img {
+    width: auto;
+    height: auto;
+  }
+
+  & ul {
+    display: flex;
+    gap: 5rem;
+    list-style: none;
+    font-size: 2rem;
+    margin-right: 5rem;
+
+    @include max(1000) {
+      display: none;
+    }
+  }
+}

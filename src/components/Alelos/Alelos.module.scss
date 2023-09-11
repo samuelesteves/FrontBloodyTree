@@ -1,0 +1,45 @@
+@import "../../assets/sass/abstracts/utilities";
+
+.alelos {
+  background-image: url("../../assets/img/bg.png");
+  color: #fefefe;
+  box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.3);
+
+  & h2 {
+    font-size: 4rem;
+    padding: 2rem;
+    text-align: center;
+  }
+
+  & article {
+    display: flex;
+    flex-flow: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+
+    & p {
+      font-size: 2rem;
+      width: 50%;
+      height: fit-content;
+      margin-right: 5rem;
+
+      @include max(1000) {
+        width: 100%;
+        margin-right: 0;
+        text-align: center;
+        padding: 2rem;
+      }
+    }
+
+    & img {
+      width: auto;
+      height: auto;
+      border-radius: 0 50% 50% 0;
+      margin-bottom: 2rem;
+
+      @include max(1000) {
+        display: none;
+      }
+    }
+  }
+}
